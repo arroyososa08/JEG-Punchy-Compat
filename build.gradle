@@ -28,6 +28,9 @@ dependencies {
 
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    // Just Enough Guns New 1.8.1 - Fabric 26.2
+    modImplementation "curse.maven:just-enough-guns-for-neoforge-1376657:8953640"
 }
 
 processResources {

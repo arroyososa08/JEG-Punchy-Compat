@@ -17,10 +17,20 @@ repositories {
         url = 'https://maven.fabricmc.net/'
     }
 
+    // CurseMaven - JEG New
     maven {
         url = 'https://www.cursemaven.com'
         content {
             includeGroup 'curse.maven'
+        }
+    }
+
+    // Modrinth Maven - Punchy
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
         }
     }
 }
@@ -33,6 +43,9 @@ dependencies {
 
     // JEG New 1.8.1 - Fabric 26.2
     implementation "curse.maven:just-enough-guns-for-neoforge-1376657:8953640"
+
+    // Punchy 2.8a - Fabric 26.2
+    implementation "maven.modrinth:8aoMKplv:QShDZDjS"
 }
 
 processResources {

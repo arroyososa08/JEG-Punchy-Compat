@@ -12,9 +12,11 @@ base {
 
 repositories {
     mavenCentral()
-    maven { url = 'https://maven.fabricmc.net/' }
 
-    // Allows Gradle to download CurseForge-hosted mod dependencies.
+    maven {
+        url = 'https://maven.fabricmc.net/'
+    }
+
     maven {
         url = 'https://www.cursemaven.com'
         content {
@@ -35,6 +37,7 @@ dependencies {
 
 processResources {
     def version = project.version
+
     inputs.property "version", version
 
     filesMatching("fabric.mod.json") {
@@ -48,6 +51,7 @@ tasks.withType(JavaCompile).configureEach {
 
 java {
     withSourcesJar()
+
     sourceCompatibility = JavaVersion.VERSION_25
     targetCompatibility = JavaVersion.VERSION_25
 }

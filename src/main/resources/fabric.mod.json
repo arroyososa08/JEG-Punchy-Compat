@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "jeg_punchy_compat",
+  "version": "${version}",
+  "name": "JEG Punchy Compat",
+  "description": "First-person animation compatibility between Just Enough Guns New and Punchy.",
+  "authors": [
+    "arroyososa08"
+  ],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.jegpunchycompat.JegPunchyCompatClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
